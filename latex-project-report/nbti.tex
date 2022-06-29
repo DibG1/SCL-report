@@ -1,0 +1,35 @@
+\chapter{NBTI testing}
+
+
+
+\section{Pre-test}
+As NBTI is a prominent failure mode in 180 nm process, it is necessary for us to test our devices for failure under NBTI stress before sending them for further application. The first step in NBTI testing of a pMOS is determination of its threshold voltage. As NBTI leads to an increase in threshold voltage, we must know its nominal threshold voltage. We determine the threshold voltage of the pMOS by low-voltage of high-voltage testing. 
+
+\noindent After determining threshold voltage, we test the device under NBTI test. For this, we use a machine integrated with a software to ease the testing process. We insert all the packages on a DUT board that has pin-outs that are connected to external circuitry in the machine. A DUT board can host several devices allowing for statistical data to be acquired.
+
+Before NBTI, we check if gate current and drain saturation current is within an acceptable limit by applying operating gate voltage to both gate and source. We also measure the off current of the MOSFET by applying zero gate voltage.
+
+\section{Test Conditions}
+We put the device under NBTI stress by applying a temperature of 150 C and a gate voltage around 10 percent above the operating gate voltage for a period of 168 hours. The drain and source voltage must be 0. This is know as symmetrical configuration. If the device shows a deviation of 10 percent from it's initially measured threshold voltage, it is considered failed. 
+
+While testing, we have to wait for a while before we actually make measurements after applying the stress and this period is referred to as stress soak time. This is necessary to ensure uniform application of stress conditions on the device.
+
+\pagebreak
+\section{Test Results}
+
+
+
+\begin{tabularx}{0.8\textwidth} { 
+  | >{\raggedright\arraybackslash}X 
+  | >{\centering\arraybackslash}X 
+  | >{\raggedleft\arraybackslash}X | }
+ \hline
+ Device ID & threshold voltage & leakage current \\
+ \hline
+ %item 21  & item 22  & item 23  \\
+\hline
+\end{tabularx}
+
+
+
+
